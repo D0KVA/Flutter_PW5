@@ -78,16 +78,6 @@ class _HomeState extends State<Home> {
                           });
                         },
                       ),
-                      IconButton(
-                        icon: Icon(Icons.delete),
-                        onPressed: () {
-                          setState(() {
-                            notes.removeAt(index);
-                            if (editIndex == index) {
-                              editIndex = null;
-                              textController.clear();
-                            }
-                          });
                         },
                       ),
                     ],
